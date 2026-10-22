@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe4">
+  <meta name="description" content="晋见山乡：山西乡村记忆地图与数字文化档案互动原型。探索三晋古村、口述记忆、乡土手艺与田野生活。">
+  <title>晋见山乡 · 山西乡村记忆计划</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">跳到主内容</a>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="晋见山乡首页">
+      <span class="brand-mark">晋</span>
+      <span class="brand-word">晋见山乡<small>山西乡村记忆计划 · 2026</small></span>
+    </a>
+    <div class="topbar-note"><span class="live-dot"></span>三晋大地 · 记忆正在续写</div>
+    <div class="topbar-tools">
+      <button class="icon-button" id="global-search" aria-label="搜索故事" title="搜索故事">⌕</button>
+      <button class="top-cta" data-route="studio">＋ 贡献记忆</button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="sidebar-label">探索计划</div>
+      <nav class="side-nav">
+        <a href="#home" data-nav="home"><span class="nav-glyph">⌂</span>首页 <small>01</small></a>
+        <a href="#map" data-nav="map"><span class="nav-glyph">⌖</span>真实地图 <small>02</small></a>
+        <a href="#archive" data-nav="archive"><span class="nav-glyph">▤</span>故事档案 <small>03</small></a>
+        <a href="#gallery" data-nav="gallery"><span class="nav-glyph">▧</span>图像图鉴 <small>04</small></a>
+        <a href="#timeline" data-nav="timeline"><span class="nav-glyph">◷</span>记忆时间轴 <small>05</small></a>
+        <a href="#voices" data-nav="voices"><span class="nav-glyph">♫</span>乡音档案 <small>06</small></a>
+        <a href="#routes" data-nav="routes"><span class="nav-glyph">↗</span>乡野漫游 <small>07</small></a>
+        <a href="#scene" data-nav="scene"><span class="nav-glyph">◇</span>3D村落 <small>08</small></a>
+        <a href="#studio" data-nav="studio"><span class="nav-glyph">✎</span>共创工坊 <small>09</small></a>
+        <a href="#saved" data-nav="saved"><span class="nav-glyph">♡</span>我的收藏 <small>10</small></a>
+        <a href="#fieldguide" data-nav="fieldguide"><span class="nav-glyph">✳</span>采录指南 <small>11</small></a>
+      </nav>
+      <div class="sidebar-card">
+        <div class="sidebar-seal">山<br>河</div>
+        <p>把乡土记忆，<br>留给下一代。</p>
+        <a href="#fieldguide">关于这项计划 <span>↗</span></a>
+      </div>
+      <div class="sidebar-foot">三晋 · 11 市 · 共建乡村记忆</div>
+    </aside>
+
+    <main id="app" class="view-host" tabindex="-1" aria-live="polite"></main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
